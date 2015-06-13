@@ -79,7 +79,7 @@ function writeCode() {
       code += state[row_i][col_i];
     }
     if (row_i != ROWS - 1) {
-      code += "\n    0b"
+      code += ",\n    0b"
     }
   }
   
