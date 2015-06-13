@@ -1,0 +1,41 @@
+#pad {
+  background-color: #87AD34;
+  
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.pad-col {
+  float: left;
+}
+
+.pad-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pad-col {
+  width: 25px;
+  height: 25px;
+  
+  background-color: #7C9E31;
+  
+  margin-right: 5px;
+}
+
+.pad-col:last-of-type {
+  margin-right: 0;
+}
+
+.pad-row {
+  margin-bottom: 5px;
+}
+
+.pad-row:last-of-type {
+  margin-bottom: 0;
+}
+
+.pad-col.active {
+  background-color: #2F3E38;
+}

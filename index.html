@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Visual character generator for Arduino LiquidCrystal</title>
+    <meta name="description" content="This tool allows you to create custom characters for HD44780 LCD modules using the Arduino LiquidCrystal library.">
+    
+    <link rel="stylesheet" href="css/lcd.css">
+    <link rel="stylesheet" href="css/pad.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Visual custom character generator</h1>
+      <h2>for the Arduino LiquidCrystal library</h2>
+
+      <div id="tools" class="clearfix">
+        <div id="pad"></div>
+
+        <div id="screen">
+          <div id="inner-screen"></div>
+        </div>   
+      </div>
+      
+      <p>
+        <a class="pad-reset" href="">Reset</a><br><br>
+        Click on the pad to draw your character. The generated code appears below.<br>
+        <a href="http://www.arduino.cc/en/Tutorial/LiquidCrystal">See the Arduino LCD tutorial for wiring instructions.</a>
+      </p>
+      
+      <textarea readonly>
+      </textarea>
+    </div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lcd.js"></script>
+    <script type="text/javascript" src="js/pad.js"></script>
+  </body>
+</html>
